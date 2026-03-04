@@ -1,16 +1,52 @@
-.sidebar {
-  font-size: 15px;
+.topbar{
+
+height:60px;
+background:#4a7bd0;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:0 20px;
+
+color:white;
+
 }
 
-.markdown-section {
-  max-width: 900px;
+.logo{
+font-size:20px;
+font-weight:600;
 }
 
-.markdown-section h1 {
-  border-bottom: 2px solid #eaecef;
-  padding-bottom: 10px;
+.search input{
+
+width:400px;
+
+padding:8px 12px;
+
+border-radius:20px;
+
+border:none;
+
 }
 
-code {
-  border-radius: 6px;
+.icons span{
+
+margin-left:15px;
+cursor:pointer;
+
+}
+
+.sidebar{
+
+top:60px;
+
+}
+
+.markdown-section{
+
+max-width:900px;
+
+margin:auto;
+
 }

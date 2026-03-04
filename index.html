@@ -2,12 +2,13 @@
 <html>
 
 <head>
+
   <meta charset="UTF-8">
   <title>Flutter Book</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
 
   <link rel="stylesheet" href="assets/css/custom.css">
 
@@ -15,34 +16,39 @@
 
 <body>
 
+  <div class="topbar">
+
+    <div class="logo">
+      Flutter Book
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Pesquisar...">
+    </div>
+
+    <div class="icons">
+      <span>✉️</span>
+      <span>👤</span>
+      <span>🎤</span>
+    </div>
+
+  </div>
+
   <div id="app"></div>
 
   <script>
+
     window.$docsify = {
-
-      name: 'Flutter Book',
-
+      name: '',
       repo: '',
-
       loadSidebar: true,
-
       subMaxLevel: 3,
-
-      auto2top: true,
-
-      search: {
-        maxAge: 86400000,
-        paths: 'auto',
-        placeholder: 'Pesquisar...',
-        noData: 'Nenhum resultado encontrado'
-      }
-
+      auto2top: true
     }
+
   </script>
 
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 
 </body>
 
