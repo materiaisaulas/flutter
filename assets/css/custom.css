@@ -105,24 +105,3 @@ blockquote {
   font-style: normal;
 }
 
-pre {
-  position: relative;
-}
-
-.copy-btn {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  background: #4caf50;
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  font-size: 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-.copy-btn:hover {
-  opacity: 1;
-}

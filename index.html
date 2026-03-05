@@ -6,6 +6,7 @@
   <title>Flutter Book</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
@@ -37,36 +38,18 @@
       repo: '',
       loadSidebar: true,
       subMaxLevel: 3,
-      auto2top: true
+      auto2top: true,
+      copyCode: {
+        buttonText: 'Copiar',
+        errorText: 'Erro',
+        successText: 'Copiado'
+      }
     }
 
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
 
-      document.querySelectorAll("pre").forEach((block) => {
-
-        const button = document.createElement("button");
-        button.innerText = "Copy";
-        button.className = "copy-btn";
-
-        button.addEventListener("click", () => {
-          const code = block.querySelector("code").innerText;
-
-          navigator.clipboard.writeText(code).then(() => {
-            button.innerText = "Copied!";
-            setTimeout(() => button.innerText = "Copy", 2000);
-          });
-        });
-
-        block.appendChild(button);
-
-      });
-
-    });
-  </script>
 </body>
 
 </html>
