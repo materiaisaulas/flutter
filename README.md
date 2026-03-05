@@ -20,3 +20,14 @@ Por fim, esta é uma jornada colaborativa. O desenvolvimento de software é uma 
 :::
 
 
+:::tip
+O Flutter utiliza um modelo **declarativo**, onde a interface é reconstruída sempre que o estado muda.
+:::
+
+:::warning
+Evite colocar lógica de negócio dentro de Widgets.
+:::
+
+:::info
+O prefixo `_` indica que a classe possui **escopo privado no arquivo Dart**.
+:::

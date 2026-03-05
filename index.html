@@ -30,52 +30,8 @@
   </div>
 
   <div id="app"></div>
-
-  <script>
-    window.$docsify = {
-      name: 'Flutter book',
-      repo: '',
-      loadSidebar: true,
-      subMaxLevel: 3,
-      auto2top: true,
-      copyCode: {
-        buttonText: 'Copiar',
-        errorText: 'Erro',
-        successText: 'Copiado'
-      }
-    }
-
-  </script>
-  <script>
-      (function () {
-
-        function imgTextPlugin(hook) {
-
-          hook.beforeEach(function (markdown) {
-
-            const regex = /:::imgtext\s+(.*?)\n([\s\S]*?):::/g;
-
-            return markdown.replace(regex, function (_, img, content) {
-
-              return `
-<div class="doc-image-text">
-  <img src="${img}">
-  <div class="doc-image-text-content">
-
-${content}
-
-  </div>
-</div>
-`
-            })
-          })
-        }
-
-        window.$docsify = window.$docsify || {};
-        window.$docsify.plugins = [].concat(imgTextPlugin, window.$docsify.plugins || []);
-
-      })();
-  </script>
+</script>
+<script src="assets/js/docsify-components.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 
