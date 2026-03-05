@@ -47,16 +47,21 @@
   font-size: 14px;
   line-height: 1.6;
   font-family: "Fira Code", "JetBrains Mono", monospace;
+  background: transparent;   /* ADICIONE */
+  display: block;            /* ADICIONE */
+  padding: 0;                /* ADICIONE */
+}
+
+.markdown-section code {
+  background: transparent;   /* ADICIONE */
 }
 
 /* cor das palavras-chave */
-
 .token.keyword {
   color: #f97316;
 }
 
 /* cor das strings */
-
 .token.string {
   color: #22c55e;
 }
