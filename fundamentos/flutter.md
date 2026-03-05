@@ -10,8 +10,20 @@ flutter create nome_do_projeto
 ```
 
 Esse comando cria um projeto inicial contendo uma estrutura básica de aplicativo.
-<img src="../assets/images/futter_demo.jpg" width="60%">
-![Texto alternativo](../assets/images/futter_demo.jpg)
+
+<div style="display:flex; align-items:center; gap:20px;">
+<img src="../assets/images/futter_demo.jpg" width="300">
+<div>
+### Estrutura do Widget
+
+Neste exemplo observamos a estrutura básica de um aplicativo Flutter.
+
+O `StatelessWidget` descreve a interface enquanto o `StatefulWidget`
+permite a existência de **estado mutável**.
+
+</div>
+
+</div>
 
 Todo aplicativo Flutter começa pela função `main()`.
 
