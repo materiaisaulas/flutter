@@ -297,7 +297,7 @@ O prefixo `_` indica que a classe possui **escopo privado no arquivo Dart**.
 
 #### Exercício
 
-:::imgtext ../assets/images/exercicio_stateful.png
+:::imgtext assets/images/exercicio_stateful.png
 
 A tela apresentada representa uma **estrutura típica de interface em Flutter construída a partir do widget `Scaffold`**, que funciona como a base organizacional de uma página no padrão Material Design. O `Scaffold` define regiões estruturais da interface, como a **AppBar (barra superior)**, o **Body (área principal de conteúdo)**, o **FloatingActionButton (botão de ação flutuante)** e a **barra inferior de navegação**. Essa organização permite separar claramente as responsabilidades visuais da aplicação, facilitando a compreensão do layout e a manutenção do código.
 
