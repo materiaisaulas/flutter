@@ -1,11 +1,24 @@
 (function () {
+
   function componentPlugin(hook) {
-    hook.beforeEach(
-      function (markdown) {
-        markdown = markdown.replace(
-          /:::imgtext\s+(.*?)\n([\s\S]*?):::/g,
-          function (_, img, content) {
-            return `
+
+    hook.beforeEach(function (markdown) {
+
+      /* IMG + TEXTO */
+
+      markdown = markdown.replace(
+        /(?:^|\n):::imgtext\s*([^\n]*)\n([\s\S]*?):::/g,
+        function (_, img, content) {
+
+          img = img.trim()
+
+          if (!img) {
+            const lines = content.trim().split("\n")
+            img = lines.shift()
+            content = lines.join("\n")
+          }
+
+          return `
 <div class="doc-image-text">
 
 <img src="${img}">
@@ -17,58 +30,59 @@ ${content}
 </div>
 
 </div>
-`;
-          },
-        );
+`
+        }
+      )
 
-        markdown = markdown.replace(
-          /:::tip\n([\s\S]*?):::/g,
-          function (_, content) {
-            return `
+      /* TIP */
+
+      markdown = markdown.replace(
+        /(?:^|\n):::tip\n([\s\S]*?):::/g,
+        function (_, content) {
+
+          return `
 <div class="doc-tip">
-
 💡 ${content}
-
 </div>
-`;
-          },
-        );
+`
+        }
+      )
 
-        markdown = markdown.replace(
-          /:::warning\n([\s\S]*?):::/g,
-          function (_, content) {
-            return `
+      /* WARNING */
+
+      markdown = markdown.replace(
+        /(?:^|\n):::warning\n([\s\S]*?):::/g,
+        function (_, content) {
+
+          return `
 <div class="doc-warning">
-
 ⚠️ ${content}
-
 </div>
-`;
-          },
-        );
+`
+        }
+      )
 
-        markdown = markdown.replace(
-          /:::info\n([\s\S]*?):::/g,
-          function (_, content) {
-            return `
+      /* INFO */
+
+      markdown = markdown.replace(
+        /(?:^|\n):::info\n([\s\S]*?):::/g,
+        function (_, content) {
+
+          return `
 <div class="doc-info">
-
 ℹ️ ${content}
-
 </div>
-`;
-          },
-        );
+`
+        }
+      )
 
-        return markdown;
-      },
-    );
+      return markdown
+
+    })
+
   }
 
-  window.$docsify =
-    window.$docsify || {};
-  window.$docsify.plugins = [].concat(
-    componentPlugin,
-    window.$docsify.plugins || [],
-  );
-})();
+  window.$docsify = window.$docsify || {}
+  window.$docsify.plugins = [].concat(componentPlugin, window.$docsify.plugins || [])
+
+})()

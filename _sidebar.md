@@ -1,14 +1,17 @@
-* [Introdução](README.md)
+- Flutter Book 
+  - [Introdução](README.md)
 
-## Fundamentos
+- Fundamentos
+  - [Fundamentos](fundamentos/fundamentos.md)
+  - [Layout parte 1](fundamentos/layout.md)
+  - [Explicando o código](fundamentos/explicandocodigo.md)
+  - [Refatorando o código](fundamentos/refatorando.md)
+  - [Constraints](fundamentos/constraints.md)
+  - [Stateless/StateFul](fundamentos/stateless_stateful.md)
+  - [Layout parte 2](fundamentos/layout01.md)
+  - [Pacote](fundamentos/widgets.md)
 
-* [Flutter](fundamentos/flutter.md)
-* [Widgets](fundamentos/widgets.md)
-* [Layout](fundamentos/layout.md)
-
-## Projeto Prático
-
-* [Parte 1](projeto/parte1.md)
-* [Parte 2](projeto/parte2.md)
-* [Parte 3](projeto/parte3.md)
-  
+- Projeto Prático
+  - [Parte 1](projeto/projeto1.md)
+  - [Parte 2](projeto/projeto2.md)
+  - [Parte 3](projeto/projeto3.md)

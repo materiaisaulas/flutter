@@ -101,13 +101,28 @@ class _MyHomePageState extends State<MyHomePage> {
 ````
 
 
-## Estrutura de um StatefulWidget
+:::imgtext images/flutter_architecture.png
+### Arquitetura do Flutter
 
-Um `StatefulWidget` é formado por **duas classes diferentes**, cada uma com uma responsabilidade específica.
+O Flutter é organizado em três camadas principais:
 
-A primeira classe é o **widget em si**, que representa a **configuração imutável do componente**. Essa classe não armazena dados que mudam.
+- Widget
+- Element
+- RenderObject
 
-A segunda classe é a **classe de estado**, responsável por armazenar e modificar os dados que podem variar durante a execução da aplicação.
+Essas camadas permitem separar **descrição da interface**, **estrutura de execução** e **renderização gráfica**.
+:::
 
-Essa separação permite que o Flutter gerencie a reconstrução da interface de forma eficiente.
 
+:::tip
+Sempre que um widget precisar ocupar **todo o espaço disponível em um Row ou Column**, utilize o widget `Expanded`.
+:::
+
+:::warning
+Evite usar muitos widgets `Container` aninhados.  
+Isso pode tornar o layout mais complexo e reduzir a legibilidade do código.
+:::
+
+:::info
+O sistema de layout do Flutter é baseado em `BoxConstraints`, que define limites mínimos e máximos de largura e altura para cada widget.
+:::

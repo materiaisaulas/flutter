@@ -37,17 +37,20 @@
 
   <script>
     window.$docsify = {
-      name: 'Flutter Book',
+      name: '',
       repo: '',
       loadSidebar: true,
-      subMaxLevel: 2
+      subMaxLevel: 1,
+      auto2top: true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      }
     }
   </script>
 
-  <script src="assets/js/docsify-components.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-
+  <script src="assets/js/docsify-components.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 
 </body>

@@ -1,4 +1,21 @@
-/* barra superior */
+/* ===============================
+   TIPOGRAFIA GLOBAL
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap');
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #2c3e50;
+  background: #f7f9fb;
+}
+
+
+/* ===============================
+   TOPBAR
+================================ */
 .topbar {
   position: fixed;
   top: 0;
@@ -14,158 +31,231 @@
   z-index: 1000;
 }
 
-/* logo */
 .logo {
   font-size: 20px;
   font-weight: 600;
 }
 
-/* campo de busca */
-.search input {
-  width: 350px;
-  padding: 8px 12px;
-  border-radius: 20px;
-  border: none;
+.icons span {
+  margin-left: 15px;
+  cursor: pointer;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+/* ===============================
+   CAMPO DE BUSCA
+================================ */
+.search input {
+  width: 340px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+}
+
+/* ===============================
+   ÁRVORE DA SIDEBAR
+================================ */
+.sidebar-nav > ul > li > p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #374151;
+  margin-top: 14px;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.sidebar-nav a:hover {
+  background: #eef2ff;
+}
+
+/* item ativo */
+
+.sidebar-nav li.active > a {
+  background: #eef2ff;
+  border-radius: 6px;
+  padding-left: 6px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.sidebar-nav li > ul {
+  border-left: 1px solid #e5e7eb;
+  margin-left: 6px;
+  padding-left: 12px;
+}
+
+/* ===============================
+   CONTEÚDO PRINCIPAL
+================================ */
+
+.content {
+  padding-top: 60px;
+}
 
 
-/* bloco de código estilo documentação */
+/* ===============================
+   ÁREA DE LEITURA (ESTILO LIVRO)
+================================ */
+.markdown-section {
+  max-width: 880px;
+  margin: auto;
+  padding: 40px 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
 
+
+/* ===============================
+   TÍTULOS
+================================ */
+.markdown-section h1 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.markdown-section h2 {
+  font-size: 28px;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+.markdown-section h3 {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.markdown-section p {
+  margin-bottom: 18px;
+}
+
+
+/* ===============================
+   BLOCKQUOTE
+================================ */
+blockquote {
+  background: #f8fafc;
+  border-left: 4px solid #5aa469;
+  padding: 12px 16px;
+  margin: 20px 0;
+  border-radius: 6px;
+  color: #374151;
+}
+
+
+/* ===============================
+   CÓDIGO
+================================ */
 .markdown-section pre {
   background: #1f2937;
   border-radius: 10px;
   padding: 18px 20px;
   margin: 25px 0;
   overflow-x: auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .markdown-section pre code {
   color: #f8fafc;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   font-family: "Fira Code", "JetBrains Mono", monospace;
   background: transparent;
-  /* ADICIONE */
   display: block;
-  /* ADICIONE */
   padding: 0;
-  /* ADICIONE */
 }
 
 .markdown-section code {
-  background: transparent;
-  /* ADICIONE */
+  font-family: "Fira Code", monospace;
+  background: #eef2f7;
+  padding: 2px 6px;
+  border-radius: 4px;
 }
 
-/* cor das palavras-chave */
+
+/* ===============================
+   HIGHLIGHT DE SINTAXE
+================================ */
 .token.keyword {
   color: #f97316;
 }
 
-/* cor das strings */
 .token.string {
   color: #22c55e;
 }
-
-/* cor de funções */
 
 .token.function {
   color: #60a5fa;
 }
 
-/* ícones */
-.icons span {
-  margin-left: 15px;
-  cursor: pointer;
-}
 
-/* ajustar sidebar */
-.sidebar {
-  top: 60px;
-}
-
-/* ajustar conteúdo */
-.content {
-  padding-top: 60px;
-}
-
-/* largura de leitura */
-
-.markdown-section {
-  max-width: 900px;
-  margin: auto;
-}
-
-blockquote {
-  background: #f8fafc;
-  border-left: 4px solid #5aa469;
-  padding: 12px 16px;
-  margin: 16px 0;
-  border-radius: 6px;
-  color: #333;
-  font-style: normal;
-}
-
-/* layout imagem + texto */
-
+/* ===============================
+   IMAGEM + TEXTO
+================================ */
 .doc-image-text {
   display: flex;
   gap: 24px;
-  margin: 30px 0;
+  margin: 35px 0;
   align-items: flex-start;
 }
 
 .doc-image-text img {
-  width: 300px;
+  width: 320px;
   border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
 .doc-image-text-content {
   flex: 1;
 }
 
-/* TIP */
+
+/* ===============================
+   CAIXAS DIDÁTICAS
+================================ */
 .doc-tip {
   background: #e8f5e9;
   border-left: 5px solid #4caf50;
-  padding: 15px;
-  margin: 20px 0;
+  padding: 16px 18px;
+  margin: 24px 0;
   border-radius: 6px;
 }
 
-/* WARNING */
 .doc-warning {
   background: #fff3e0;
   border-left: 5px solid #ff9800;
-  padding: 15px;
-  margin: 20px 0;
+  padding: 16px 18px;
+  margin: 24px 0;
   border-radius: 6px;
 }
 
-/* INFO */
 .doc-info {
   background: #e3f2fd;
   border-left: 5px solid #2196f3;
-  padding: 15px;
-  margin: 20px 0;
+  padding: 16px 18px;
+  margin: 24px 0;
   border-radius: 6px;
 }
 
-/* responsivo */
-@media (max-width:900px) {
+/* ===============================
+   RESPONSIVO
+================================ */
+@media (max-width: 900px) {
   .doc-image-text {
     flex-direction: column;
   }
+
   .doc-image-text img {
     width: 100%;
   }
 
-}
+  .sidebar {
+    width: 240px;
+  }
 
-.content {
-  padding-top: 80px;
 }
