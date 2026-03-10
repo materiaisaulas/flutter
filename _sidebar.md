@@ -8,8 +8,8 @@
   - [Refatorando o código](fundamentos/refatorando.md)
   - [Constraints](fundamentos/constraints.md)
   - [Stateless/StateFul](fundamentos/stateless_stateful.md)
-  - [Layout parte 2](fundamentos/layout01.md)
-  - [Pacote](fundamentos/widgets.md)
+  - [Refatorando stateless/steful](fundamentos/layout01.md)
+  - [Incluindo rota](fundamentos/widgets.md)
 
 - Projeto Prático
   - [Parte 1](projeto/projeto1.md)
