@@ -10,8 +10,6 @@ Com essa modificação, o projeto passa a demonstrar **a estrutura básica de na
 
 ![Incluindo rotas](../assets/images/incluindo_rotas.png)
 
-Perfeito. Vamos em etapas.
-
 **Passo 1: registrar as rotas no `MaterialApp`.**
 
 Nesta etapa, vamos preparar o arquivo `main.dart` para que a aplicação reconheça mais de uma tela. A ideia é definir um nome para cada rota, permitindo que o Flutter saiba qual página abrir quando a navegação for solicitada. Por enquanto, mesmo antes de criar a nova tela, já podemos deixar a estrutura pronta para recebê-la.
