@@ -12,7 +12,7 @@ Exemplos na tela:
 
 Cada um desses itens é uma instância do mesmo widget.
 
-<img src="../assets/images/estrutura_componente_quick.svg"
+<img src="/assets/images/estrutura_componente_quick.svg"
      alt="Estrutura visual do componente"
      style="width:90%;">
 
