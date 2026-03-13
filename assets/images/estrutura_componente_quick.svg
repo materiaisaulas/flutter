@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { font: 700 26px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .label { font: 700 22px Arial, Helvetica, sans-serif; fill: #1f2937; }
+      .small { font: 500 18px Arial, Helvetica, sans-serif; fill: #4b5563; }
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 22; }
+      .line { stroke: #94a3b8; stroke-width: 3; fill: none; }
+      .iconFill { fill: #e2e8f0; stroke: #94a3b8; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect width="900" height="700" fill="#f8fafc"/>
+
+  <text x="450" y="70" text-anchor="middle" class="title">Estrutura visual do componente</text>
+
+  <!-- Container -->
+  <g filter="url(#shadow)">
+    <rect x="170" y="110" width="560" height="500" rx="30" class="box"/>
+  </g>
+  <text x="450" y="155" text-anchor="middle" class="label">Container</text>
+
+  <!-- Column -->
+  <g filter="url(#shadow)">
+    <rect x="260" y="190" width="380" height="350" rx="26" fill="#f8fafc" stroke="#dbeafe" stroke-width="2"/>
+  </g>
+  <text x="450" y="230" text-anchor="middle" class="label">Column</text>
+
+  <!-- connector top -->
+  <path d="M450 160 L450 188" class="line"/>
+
+  <!-- Icon box -->
+  <g filter="url(#shadow)">
+    <rect x="335" y="265" width="230" height="95" rx="22" class="box"/>
+  </g>
+  <text x="450" y="320" text-anchor="middle" class="label">Icon</text>
+
+  <!-- icon graphic -->
+  <circle cx="385" cy="312" r="16" class="iconFill"/>
+  <rect x="378" y="285" width="14" height="14" rx="4" class="iconFill"/>
+
+  <!-- Text box -->
+  <g filter="url(#shadow)">
+    <rect x="335" y="395" width="230" height="95" rx="22" class="box"/>
+  </g>
+  <text x="450" y="450" text-anchor="middle" class="label">Text</text>
+  <text x="450" y="478" text-anchor="middle" class="small">rótulo descritivo</text>
+
+  <!-- connectors -->
+  <path d="M450 240 L450 262" class="line"/>
+  <path d="M450 360 L450 393" class="line"/>
+</svg>
