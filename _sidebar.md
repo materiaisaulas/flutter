@@ -20,6 +20,7 @@
     - [invoice_status_card.dart](fundamentos/semparar07.md)
     - [app_header_banner.dart](fundamentos/semparar08.md)
     - [home_page.dart](fundamentos/semparar09.md)
+  
 
 - Projeto Prático
   - [Parte 1](projeto/projeto1.md)

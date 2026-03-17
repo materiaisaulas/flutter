@@ -12,7 +12,7 @@ Exemplos de ações:
 
 Cada uma dessas opções será exibida utilizando o widget **`QuickActionItem`** criado anteriormente. A estrutura visual do componente pode ser representada da seguinte forma:
 
-<img src="/assets/images/estrutura_quick_actions_didatica.svg"
+<img src="../assets/images/estrutura_quick_actions_didatica.svg"
      alt="Estrutura visual do componente"
      style="width:90%;">
 
