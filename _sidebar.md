@@ -34,13 +34,7 @@
   - [ElevatedButtonWidget](flutter/componentes_basicos/elevated_button_widget.md)
   - [SizedBox](flutter/componentes_basicos/sized_box.md)
   - [TextFormFieldWidget](flutter/componentes_basicos/text_form_field_widget.md)
-
-  <!-- - [Padronização Visual com ThemeData](flutter/componentes_basicos/app_padrao.md)
-    - [ListViewWidget](flutter/componentes_basicos/list_view_widget.md)
-    - [Row](flutter/componentes_basicos/row_widget.md)
-    - [Expanded](flutter/componentes_basicos/expanded_widget.md)
-    - [Flexible](flutter/componentes_basicos/flexible_widget.md) -->
-
+  
 - Projeto Prático
   - [Parte 1](flutter/projeto/projeto1.md)
   - [Parte 2](flutter/projeto/projeto2.md)
