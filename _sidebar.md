@@ -8,7 +8,7 @@
   - [Refatorando o código](flutter/fundamentos/refatorando.md)
   - [Constraints](flutter/fundamentos/constraints.md)
   - [Stateless/StateFul](flutter/fundamentos/stateless_stateful.md)
-  - [Refatorando stateless/steful](flutter/fundamentos/layout01.md)
+  - [Refatorando stateless/stateful](flutter/fundamentos/layout01.md)
   - [Incluindo rota](flutter/fundamentos/widgets.md)
   - [Tela principal](flutter/fundamentos/semparar.md)
     - [quick_action_item.dart](flutter/fundamentos/semparar01.md)
@@ -20,7 +20,26 @@
     - [invoice_status_card.dart](flutter/fundamentos/semparar07.md)
     - [app_header_banner.dart](flutter/fundamentos/semparar08.md)
     - [home_page.dart](flutter/fundamentos/semparar09.md)
-  
+- Padronização Visual
+  - [O modelo](flutter/padronizacao_visual/001_1_introducao.md)
+    - [main.dart](flutter/padronizacao_visual/001_2_main.md)
+    - [app_scafold.dart](flutter/padronizacao_visual/001_3_scaffold.md)
+    - [home_page.dart](flutter/padronizacao_visual/001_4_home_page.md)
+    - [app_drawer.dart](flutter/padronizacao_visual/001_5_app_drawer.md)
+    - [app_theme.dart](flutter/padronizacao_visual/001_6_app_theme.md)
+  - [Container](flutter/componentes_basicos/container.md)
+  - [BoxDecorator](flutter/componentes_basicos/boxdecoration.md)
+  - [InkWell](flutter/componentes_basicos/ink_well_widget.md)
+  - [Icon](flutter/componentes_basicos/icon_widget.md)
+  - [ElevatedButtonWidget](flutter/componentes_basicos/elevated_button_widget.md)
+  - [SizedBox](flutter/componentes_basicos/sized_box.md)
+  - [TextFormFieldWidget](flutter/componentes_basicos/text_form_field_widget.md)
+
+  <!-- - [Padronização Visual com ThemeData](flutter/componentes_basicos/app_padrao.md)
+    - [ListViewWidget](flutter/componentes_basicos/list_view_widget.md)
+    - [Row](flutter/componentes_basicos/row_widget.md)
+    - [Expanded](flutter/componentes_basicos/expanded_widget.md)
+    - [Flexible](flutter/componentes_basicos/flexible_widget.md) -->
 
 - Projeto Prático
   - [Parte 1](flutter/projeto/projeto1.md)
